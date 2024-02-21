@@ -91,6 +91,8 @@ autoscaling:
 environment:
   - name: SERVER_PORT
     value: "80"
+  - name: FOO
+    value: "bar"
 
 # Additional volumes on the output Deployment definition.
 volumes: []
