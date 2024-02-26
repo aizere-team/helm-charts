@@ -90,7 +90,7 @@ autoscaling:
 
 environment:
   - name: SERVER_PORT
-    value: "80"
+    value: '80'
   - name: FOO
     value: "bar"
 
