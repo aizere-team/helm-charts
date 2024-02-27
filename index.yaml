@@ -3,6 +3,16 @@ entries:
   generic-app-chart:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-02-27T04:04:22.693986477Z"
+    description: A generic Helm chart for Kubernetes to deploy Aizere stack app
+    digest: 08186b3b0a664ed60cb25975586b2e515c6f716f5dc6d020b9e637ed2519e9e4
+    name: generic-app-chart
+    type: application
+    urls:
+    - https://github.com/aizere-team/helm-charts/releases/download/generic-app-chart-0.1.0/generic-app-chart-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2024-02-27T03:57:59.003468387Z"
     description: A generic Helm chart for Kubernetes to deploy Aizere stack app
     digest: 0b5cd3f7a482dbb1dfd5e7856469671170ff10a524bb141f91090f0ec16e814f
@@ -91,4 +101,4 @@ entries:
     urls:
     - https://github.com/aizere-team/helm-charts/releases/download/generic-app-chart-0.0.1/generic-app-chart-0.0.1.tgz
     version: 0.0.1
-generated: "2024-02-27T03:57:59.003508151Z"
+generated: "2024-02-27T04:04:22.69402534Z"
