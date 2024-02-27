@@ -46,7 +46,7 @@ spec:
             {{- toYaml .Values.readinessProbe | nindent 12 }}
           env:
             - name: SERVER_PORT
-              value: {{ .Values.service.port }}
+              value: {{ .Values.service.port | quote }}
           {{- with .Values.environment }}
             {{- toYaml . | nindent 12 }}
           {{- end }}
