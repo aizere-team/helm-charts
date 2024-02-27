@@ -47,7 +47,9 @@ spec:
           env:
             - name: SERVER_PORT
               value: {{ .Values.service.port }}
-            {{- toYaml .Values.environment | nindent 12 }}
+          {{- with .Values.environment }}
+            {{- toYaml | nindent 12 }}
+          {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- with .Values.volumeMounts }}
