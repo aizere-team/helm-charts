@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "generic-app-chart.fullname" . }}
+  name: {{ include "generic-app-chart.fullname" . }}-deployment
   labels:
     {{- include "generic-app-chart.labels" . | nindent 4 }}
 spec:
@@ -45,6 +45,8 @@ spec:
           readinessProbe:
             {{- toYaml .Values.readinessProbe | nindent 12 }}
           env:
+            - name: SERVER_PORT
+              value: {{ .Values.service.port }}
             {{- toYaml .Values.environment | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

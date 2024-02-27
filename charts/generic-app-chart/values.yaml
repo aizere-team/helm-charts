@@ -43,6 +43,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
+  port: 80
 
 ingress:
   enabled: true
@@ -89,8 +90,6 @@ autoscaling:
   targetMemoryUtilizationPercentage: 80
 
 environment:
-  - name: SERVER_PORT
-    value: '80'
   - name: FOO
     value: "bar"
 
