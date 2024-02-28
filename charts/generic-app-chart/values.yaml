@@ -28,7 +28,8 @@ serviceAccount:
   name: ""
 
 podAnnotations: {}
-podLabels: {}
+podLabels:
+  env: "development"
 
 podSecurityContext: {}
   # fsGroup: 2000
